@@ -1,4 +1,4 @@
-package org.wsq.openai;
+package org.sqfire.openai;
 
 public class Main {
     public static void main(String[] args) {
