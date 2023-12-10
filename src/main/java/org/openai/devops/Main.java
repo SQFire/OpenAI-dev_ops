@@ -1,4 +1,4 @@
-package org.sqfire.openai;
+package org.openai.devops;
 
 public class Main {
     public static void main(String[] args) {
