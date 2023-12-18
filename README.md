@@ -6,9 +6,9 @@ OpenAI-dev_ops
 
 2.阿里云服务器
 
-3.docker配置-使用阿里云服务器进行远程链接
+3.docker配置-使用vm进行远程链接
 
-4.protainer使用
+4.portainer使用
 
 5.nginx配置
 
