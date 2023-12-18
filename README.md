@@ -8,6 +8,8 @@ OpenAI-dev_ops
 
 3.docker配置-使用vm进行远程链接
 
+docker不支持容器之间的文件传输，解决：docker->vm->windows; windows->vm->docker
+
 4.portainer使用
 
 5.nginx配置
