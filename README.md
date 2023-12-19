@@ -15,14 +15,11 @@ docker不支持容器之间的文件传输，解决：docker->vm->windows; windo
 5.nginx配置
 
 linux命令
-
-docker run \
---name Nginx \
--p 80:80 \
--v /data/nginx/logs:/var/log/nginx \
--v /data/nginx/html:/usr/share/nginx/html \
--v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
--v /data/nginx/conf.d:/etc/nginx/conf.d \
--v /data/nginx/ssl:/etc/nginx/ssl/ \
---privileged=true -d --restart=always nginx
+docker run --name Nginx -p 80:80 \
+> -v /data/nginx/logs:/var/log/nginx \
+> -v /data/nginx/html:/usr/share/nginx/html \
+> -v /data/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
+> -v /data/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf \
+> -v /data/nginx/ssl:/etc/nginx/ssl \
+> --privileged=true -d --restart=always nginx
 
